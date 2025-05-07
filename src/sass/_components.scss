@@ -1,0 +1,53 @@
+@use 'base';
+
+/* Main navigation and links*/
+nav {
+    a {
+        align-content: center;
+        padding: 0px 40px;
+        height: 100px;
+        text-decoration: none;
+        color: #fff;
+        font-weight: 600;
+    }
+
+    a:hover {
+        background-color: base.$quaternary-color;
+        color:  base.$secondary-color;
+    }
+}
+
+.active {
+    color: base.$secondary-color;
+    background-color: base.$tertiary-color;
+}
+
+/* Buttons */
+button {
+    padding: 10px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: base.$extra-color;
+}
+
+button:hover {
+    background-color: #d8c51b;
+}
+
+/* Inputs */
+form {
+    margin-left: 2%;
+}
+
+input, textarea {
+    width: 40%;
+    padding: 5px 10px;
+    border: 1px solid base.$secondary-color;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+@media screen and (max-width: 700px) {
+    input, textarea { width: 70%; }
+}

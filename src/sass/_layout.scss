@@ -1,0 +1,108 @@
+
+@use "base";
+
+/* General design*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: base.$font-family;
+    background-color: base.$quaternary-color;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    background-color: base.$primary-color;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0px auto;
+    background-color: base.$quaternary-color;
+}
+
+section {
+    padding: 40px 20px;
+    width: 80%;
+    margin: 0px auto;
+    background-color: base.$tertiary-color;
+}
+
+p {
+    max-width: 65ch;
+    margin-left: 2%;
+}
+
+h1 {
+    margin-left: 2%;
+}
+
+footer {
+    padding: 40px 2%;
+    background-color: base.$primary-color;
+}
+
+/* Main navigation */
+nav {
+    ul {
+        margin: 0px;
+        display: flex;
+        flex-direction: row;
+        justify-self: center;
+        list-style-type: none;
+    }
+}
+
+/* Workexperience */
+article {
+    width: 90%;
+    padding: 20px 2%;
+    margin: 10px auto;
+    border-radius: 5px;
+    background-color: base.$secondary-color;
+
+    h2 {
+        color: base.$quaternary-color;
+    }
+
+    p {
+        margin-left: 0px !important;
+    }
+}
+
+/* Inputs */
+#companyNew, #titleNew, #locationNew, #descrNew, #company, #title, #location, #descr {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#endNew, #end {
+    width: 15% !important;
+}
+
+#startNew, #start {
+    @extend #endNew;
+    margin-right: 10px;
+}
+
+label[for="descr"], label[for="descrNew"] {
+    display: block;
+    margin-top: 10px;
+}
+
+#confirm {
+    display: none;
+    height: 60px;
+    background-color: base.$extra-color;
+    text-align: center;
+    align-content: center;
+}
+
+/* Screens under 500px */
+@media screen and (max-width: 500px) {
+    main { width: 100%; }
+    section { width: 90%; }
+    ul{ padding: 0px; }
+    article { padding: 20px 5%; }
+    #confirm { height: 100px;}
+}

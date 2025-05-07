@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sass/main.scss">
+    <title>Lägg till erfarenhet</title>
+    <script type="module" src="js/main.js"></script>
+</head>
+<body>
+    <!-- Header with main navigation -->
+    <header>
+        <nav>
+            <ul>
+                <a href="index.html"><li>CV</li></a>
+                <a href="add.html" class="active"><li>Lägg till</li></a>
+                <a href="about.html"><li>Om webb&shy;platsen</li></a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Section with form -->
+        <section>
+            <h1>Lägg till nya arbetslivserfarenheter</h1>
+            <form>
+                <label for="company">Arbetsgivare:</label>
+                <input type="text" name="company" id="company">
+                <label for="title">Yrkestitel:</label>
+                <input type="text" name="title" id="title">
+                <lable for="location">Plats:</lable>
+                <input type="text" name="location" id="location">
+                <label for="start">Från:</label>
+                <input type="date" name="start" id="start">
+                <label for="end">Till:</label>
+                <input type="date" name="end" id="end">
+                <button id="submit">Lägg till</button>
+            </form>
+        </section>
+    </main>
+    <div id="confirm"></div>
+    <!-- Footer -->
+    <footer>
+        <p><strong>DT207G - Backend-baserad webbutveckling</strong></p>
+        <p>Laboration 3.2</p>
+        <p>Kim Dudenhöfer</p>
+    </footer>
+</body>
+</html>
